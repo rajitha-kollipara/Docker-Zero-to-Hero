@@ -6,7 +6,7 @@ COPY requirements.txt /app
 COPY devops /app
 
 RUN apt-get update && \
-    apt-get python3 -m pip install --upgrade pip --break-system-packages && \
+    apt-get install -y python3-requests python3-pip && \
     pip install -r requirements.txt && \
     cd devops
 
