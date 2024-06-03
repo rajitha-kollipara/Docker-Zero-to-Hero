@@ -1,4 +1,6 @@
 FROM ubuntu
+ENV PIP_BREAK_SYSTEM_PACKAGES 1
+
 
 WORKDIR /app
 
